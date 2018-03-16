@@ -87,24 +87,29 @@ First load the necessary modules for this exercise.
 ```python
 import sys
 sys.path.append('shared/')
+from defaults import *
 
-import defaults
-defaults.load_headers()
+# Load All Main Packages and SubPackages
+load({"pd":"pandas",
+      "np":"numpy",
+      "py":"plotly",
+      "sp":"scipy"},
+     {"plot":"py.offline",
+      "plot_g":"py.graph_objs"})
+
+# Set Up Defaults
+defaults()
 ```
+
+
+<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
+
 
 
 
 
 <link href="shared/css/defaults.css" rel="stylesheet"><link href="../../shared/css/definitions.css" rel="stylesheet"><link href="../../shared/css/general.css" rel="stylesheet"><link href="shared/css/python.css" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="shared/js/styles.js"></script><script src="shared/js/popover.js"></script>
 
-
-
-
-```python
-print("Done")
-```
-
-    Done
 
 
 ## Lorem Ipsum
@@ -115,20 +120,12 @@ Curabitur at urna in urna scelerisque maximus non ut urna. Nulla pharetra ipsum 
 
 
 ```python
-def fibonacci(n):
-    if (n == 1):
-        return 1;
-    elif (n == 2):
-        return 1;
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
-
-fibonacci(10)
+plot.iplot({
+    "data": [plot_g.Scatter(x=[1, 2, 3, 4], y=[4, 3, 2, 1])],
+    "layout": plot_g.Layout(title="hello world", autosize=True)
+})
 ```
 
 
-
-
-    55
-
+<div id="a9585725-47a3-4494-9fc1-2baf90d23bb0" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("a9585725-47a3-4494-9fc1-2baf90d23bb0", [{"type": "scatter", "x": [1, 2, 3, 4], "y": [4, 3, 2, 1]}], {"title": "hello world", "autosize": true}, {"linkText": "Export to plot.ly", "showLink": true})});</script>
 
