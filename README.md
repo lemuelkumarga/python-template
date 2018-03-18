@@ -127,5 +127,5 @@ plot.iplot({
 ```
 
 
-<div id="a9585725-47a3-4494-9fc1-2baf90d23bb0" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("a9585725-47a3-4494-9fc1-2baf90d23bb0", [{"type": "scatter", "x": [1, 2, 3, 4], "y": [4, 3, 2, 1]}], {"title": "hello world", "autosize": true}, {"linkText": "Export to plot.ly", "showLink": true})});</script>
+<div id="f83932e1-35ae-4d53-8e93-8056b93e626c" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("f83932e1-35ae-4d53-8e93-8056b93e626c", [{"type": "scatter", "x": [1, 2, 3, 4], "y": [4, 3, 2, 1]}], {"title": "hello world", "autosize": true}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
 
