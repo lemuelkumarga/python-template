@@ -89,21 +89,17 @@ import sys
 sys.path.append('shared/')
 from defaults import *
 
-# Load All Main Packages and SubPackages
+# Load All Main Modules
 load({"pd":"pandas",
       "np":"numpy",
-      "py":"plotly",
-      "sp":"scipy"},
-     {"plot":"py.offline",
-      "plot_g":"py.graph_objs"})
+      "sp":"scipy",
+      "mpl":"matplotlib"})
 
-# Set Up Defaults
+# Load All Submodules
+import matplotlib.pyplot as splot 
+
 defaults()
 ```
-
-
-<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
-
 
 
 
@@ -117,15 +113,3 @@ defaults()
 <a data-toggle="popover" title="Lorem Ipsum" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Data obtained from https://www.lipsum.com/.">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Vivamus sit amet urna nunc. Ut bibendum sem nibh, lobortis tempor dolor scelerisque ut. Nunc elit lorem, accumsan in pharetra ac, sodales sit amet arcu. In hac habitasse platea dictumst. Sed accumsan fringilla purus. Aliquam tincidunt ultricies sapien, eu pellentesque quam porttitor dignissim. Cras convallis, ipsum feugiat porttitor tempus, tortor orci fringilla augue, vel ultrices magna massa varius nibh. Ut gravida posuere dolor, non tincidunt eros sollicitudin in. Curabitur quis odio condimentum lectus congue fermentum id eget odio. Proin sagittis, nisl ac imperdiet ornare, metus risus tempor velit, gravida laoreet lacus purus in metus. Sed sed cursus dolor. Aliquam lobortis purus eget iaculis interdum. Maecenas nec eros magna.
 
 Curabitur at urna in urna scelerisque maximus non ut urna. Nulla pharetra ipsum neque, quis dapibus ex egestas a. Nunc condimentum lectus et sapien convallis molestie. Suspendisse vel massa fringilla, imperdiet diam ut, fringilla lacus. Aliquam molestie orci purus, a tristique lacus malesuada quis. Ut rutrum lacus non vulputate iaculis. Cras tincidunt risus nisl, lobortis pellentesque purus laoreet in. Ut malesuada erat eu massa efficitur, condimentum euismod ligula imperdiet. Nunc lorem tortor, placerat iaculis facilisis vitae, euismod id nisl. Duis venenatis pharetra arcu sed sagittis. Vivamus eu ex vitae odio eleifend congue. Proin iaculis imperdiet sapien, et lobortis libero efficitur in. In ac ex elementum, ornare elit id, lacinia erat.
-
-
-```python
-plot.iplot({
-    "data": [plot_g.Scatter(x=[1, 2, 3, 4], y=[4, 3, 2, 1])],
-    "layout": plot_g.Layout(title="hello world", autosize=True)
-})
-```
-
-
-<div id="f83932e1-35ae-4d53-8e93-8056b93e626c" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("f83932e1-35ae-4d53-8e93-8056b93e626c", [{"type": "scatter", "x": [1, 2, 3, 4], "y": [4, 3, 2, 1]}], {"title": "hello world", "autosize": true}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
-
