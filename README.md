@@ -87,18 +87,18 @@ First load the necessary modules for this exercise.
 ```python
 import sys
 sys.path.append('shared/')
-from defaults import *
+import defaults as _d
 
 # Load All Main Modules
-load({"pd":"pandas",
-      "np":"numpy",
-      "sp":"scipy",
-      "mpl":"matplotlib"})
+_d.load({"pd":"pandas",
+         "np":"numpy",
+         "sp":"scipy",
+         "mpl":"matplotlib"})
 
 # Load All Submodules
-import matplotlib.pyplot as splot 
+import matplotlib.pyplot as plt
 
-defaults()
+_d.stylize()
 ```
 
 
