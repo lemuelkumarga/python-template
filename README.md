@@ -94,6 +94,7 @@ First load the necessary modules for this exercise.
 import sys
 sys.path.append('shared/')
 import defaults as _d
+import helper as _h
 
 # Load All Main Modules
 _d.load({"pd":"pandas",
@@ -106,6 +107,10 @@ import matplotlib.pyplot as plt
 
 _d.stylize()
 ```
+
+
+<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
+
 
 
 
