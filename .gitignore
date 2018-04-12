@@ -24,10 +24,3 @@ __pycache__
 .cache
 .coverage
 *.swp
-
-# HTML Files
-index_files/*
-/*.html
-
-# README files
-README_files/*
