@@ -77,9 +77,7 @@ cd ../../
 
 # Insert Title Here
 
-#### <i>Lemuel Kumarga</i>
-
-<h4 class="date"><em>Mon YYYY</em></h4>
+<h4><span class="meta"><span class="by">by</span><span class="writer">Lemuel Kumarga</span><span class="date">Mon YYYY</span></span></h4>
 
 ## Problem Description
 
@@ -107,6 +105,10 @@ import matplotlib.pyplot as plt
 
 _d.stylize()
 ```
+
+
+<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
+
 
 
 
