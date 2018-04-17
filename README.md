@@ -79,12 +79,9 @@ cd ../../
 
 #### <i>Lemuel Kumarga</i>
 
-
 ## Problem Description
 
 Insert Problem Description Here.
-
-
 
 ## Preliminaries
 
@@ -108,10 +105,6 @@ import matplotlib.pyplot as plt
 
 _d.stylize()
 ```
-
-
-<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
-
 
 
 
