@@ -77,7 +77,8 @@ cd ../../
 
 # Insert Title Here
 
-<h4><span class="meta"><span class="writer">Lemuel Kumarga</span><br><span class="date">Mon YYYY</span></span></h4>
+<h4 class="author"><span class="meta">Lemuel Kumarga</span></h4>
+<h4 class="date"><span class="meta">Mon YYYY</span></h4>
 
 ## Problem Description
 
